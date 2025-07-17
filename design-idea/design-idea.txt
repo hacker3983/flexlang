@@ -1,0 +1,42 @@
+# File Extension
+A .flex file extension will be used
+
+# Hello, World example in flex lang
+```
+flex main:int argc, string argv -> int
+{
+	flex::write(stdout, "Hello, World!");
+	ret 0;
+}
+```
+
+# Add two numbers example in flex lang
+```
+flex main -> int {
+	flexvar:int a = 10, int:b = 10, int:sum = a + b;
+	flex::write(stdout, f"{a} + {b} = {sum}");
+	ret 0;
+}
+```
+
+# Take input from user
+```
+flex main -> int {
+	flexvar:string name;
+	name = flex::input("Please enter your name: ");
+	flex::write(stdout, f"Nice to meet you {name}. Welcome to flexlang!");
+	ret 0;
+}
+```
+
+# Defining functions the flex keyword will be used
+
+```
+flex add:int a, int b -> int {
+	ret a + b;
+}
+
+flex main -> int {
+	ret 0;
+}
+```
